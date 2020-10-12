@@ -1,0 +1,22 @@
+table PeopleList {
+    peoples : [People];
+}
+
+table People {
+    id : string;
+    index : long;
+    test : string;
+    guid : string;
+    name : string;
+	gender : string;
+	company : string;
+	email : string;
+	friendsAbh : [FriendAbh];
+}
+
+table FriendAbh {
+    id : long;
+    name : string;
+}
+
+root_type PeopleList;
